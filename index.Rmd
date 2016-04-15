@@ -1,0 +1,134 @@
+---
+title       : 大数据时代，再造创造力
+subtitle    : 创造力研究及机器学习展示
+author      : 朱浚铭 Jeremy
+job         : 商业分析在读博士
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [bootstrap, quiz, shiny, interactive]
+ext_widgets : {rCharts: [libraries/nvd3, libraries/highcharts]}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+
+---
+
+## 简介
+
+1. Edit YAML front matter
+2. Write using R Markdown
+3. Use an empty line followed by three dashes to separate slides!
+
+--- .class #id 
+
+## Slide 2
+
+1. Paste
+2. Copy
+
+---
+## 放大创造力
+
+- map your circles of creativity, let creative people share ideas with each other. Someday, they will surprise you. 
+- you also need to identify your creativity brokers -- people with good judgement and access to resources. 
+- it’s also important to move toward multi-generational leadership teams.
+- You should also be ready to change your consumer frame. 
+- be a platform for creativity. 
+By Bruce Nussbaum
+
+--- &radio
+## Question 1
+
+What is 1 + 1?
+
+1. 1
+2. _2_
+3. 3
+4. 4
+
+*** .hint
+This is a hint
+
+*** .explanation
+This is an explanation## Question 1
+
+---
+
+## Interactive Chart
+
+```{r echo = F, results = 'asis'}
+require(rCharts)
+haireye = as.data.frame(HairEyeColor)
+n1 <- nPlot(Freq ~ Hair, group = 'Eye', type = 'multiBarChart',
+  data = subset(haireye, Sex == 'Male')
+)
+n1$print('chart1')
+```
+
+--- &interactive
+
+## Interactive Console
+
+```{r opts.label = 'interactive', results = 'asis'}
+require(googleVis)
+M1 <- gvisMotionChart(Fruits, idvar = 'Fruit', timevar = 'Year')
+```
+
+```{r results='asis'}
+print(M1, 'chart')
+```
+
+---
+
+## Interactive Chart with Shiny Controls
+
+```{r echo = F, opts.label = 'shiny'}
+slidifyUI(
+  sidebarPanel(
+    selectInput('sex', 'Choose Sex', c('Male', 'Female')),
+    selectInput('type', 'Choose Type',
+      c('multiBarChart', 'multiBarHorizontalChart')
+    )
+  ),
+  mainPanel(
+    tags$div(id = 'nvd3plot', class='shiny-html-output nvd3 rChart')
+  )
+)
+```
+
+--- &interactive
+
+## Interactive Console
+
+```{r opts.label = 'interactive', results = 'asis'}
+require(rCharts)
+a <- Highcharts$new()
+a$chart(type = "spline")
+a$series(data = c(1, 3, 2, 4, 5, 4, 6, 2, 3, 5, NA), dashStyle = "longdash")
+a$series(data = c(NA, 4, 1, 3, 4, 2, 9, 1, 2, 3, 4), dashStyle = "shortdot")
+a$legend(symbolWidth = 80)
+a$print('chart3')
+```
+
+--- &interactive
+
+## Results = Markup
+
+```{r opts.label = 'interactive', results = 'markup'}
+require(xtable)
+options(xtable.type = 'html')
+xtable(head(mtcars))
+```
+
+--- &interactive
+
+## Interactive economic 
+
+```{r opts.label = 'interactive', results='markup'}
+data(economics, package = "ggplot2")
+econ = transform(economics, date = as.character(date))
+m1 = mPlot(x = "date", y = c("psavert", "uempmed"), type = "Line", data = econ)
+m1$set(pointSize = 0, lineWidth = 1)
+m1
+```
+
