@@ -29,10 +29,6 @@ knit        : slidify::knit2slides
 3. 数据驱动的科研能力
 4. 创造力！
 
-> "Food is an important part of a balanced diet"
-
-> <cite>Fran Lebowitz</cite>
-
 批判性思维（CriticalThinking）就是通过一定的标准评价思维，进而改善思维，是合理的、反思性的思维，既是思维技能，也是思维倾向。最初的起源可以追溯到苏格拉
 
 ---
@@ -40,31 +36,31 @@ knit        : slidify::knit2slides
 ## 放大创造力：发现与重建
 
 1. 任何人都有创造力
-2. 
+2. 不同创造力水平
+3. 创造力模式
+4. 动机
+5. 机遇
 
-- map your circles of creativity, let creative people share ideas with each other. Someday, they will surprise you. 
-- you also need to identify your creativity brokers -- people with good judgement and access to resources. 
-- it’s also important to move toward multi-generational leadership teams.
-- You should also be ready to change your consumer frame. 
-- be a platform for creativity. 
-By Bruce Nussbaum
+- 通过构建创造力发现与激励社区，增强观点的交流，创造力将容易被发现与开拓
+- 通过领导团队来推动创造力的开发
+- 为创造力构建温床
 
 --- &radio
 
-## Question 1
+## 小调查
 
-What is 1 + 1?
+什么样的人创造力更高？
 
-1. 1
-2. _2_
-3. 3
-4. 4
+1. 男人
+2. 女人
+3. 工程师
+4. 艺术家
 
 *** .hint
-This is a hint
+上一页
 
 *** .explanation
-This is an explanation## Question 1
+解释参考来自于上一页
 
 ---
 
@@ -239,184 +235,8 @@ This is an explanation## Question 1
 ## Interactive Console
 
 <textarea class='interactive' id='interactive{{slide.num}}' data-cell='{{slide.num}}' data-results='asis' style='display:none'>require(googleVis)
-M1 <- gvisMotionChart(Fruits, idvar = 'Fruit', timevar = 'Year')</textarea>
-
-
-```r
-print(M1, 'chart')
-```
-
-<!-- MotionChart generated in R 3.2.4 by googleVis 0.5.10 package -->
-<!-- Sat Apr 16 14:55:55 2016 -->
-
-
-<!-- jsHeader -->
-<script type="text/javascript">
- 
-// jsData 
-function gvisDataMotionChartID956e344afff1 () {
-var data = new google.visualization.DataTable();
-var datajson =
-[
- [
- "Apples",
-2008,
-"West",
-98,
-78,
-20,
-"2008-12-31" 
-],
-[
- "Apples",
-2009,
-"West",
-111,
-79,
-32,
-"2009-12-31" 
-],
-[
- "Apples",
-2010,
-"West",
-89,
-76,
-13,
-"2010-12-31" 
-],
-[
- "Oranges",
-2008,
-"East",
-96,
-81,
-15,
-"2008-12-31" 
-],
-[
- "Bananas",
-2008,
-"East",
-85,
-76,
-9,
-"2008-12-31" 
-],
-[
- "Oranges",
-2009,
-"East",
-93,
-80,
-13,
-"2009-12-31" 
-],
-[
- "Bananas",
-2009,
-"East",
-94,
-78,
-16,
-"2009-12-31" 
-],
-[
- "Oranges",
-2010,
-"East",
-98,
-91,
-7,
-"2010-12-31" 
-],
-[
- "Bananas",
-2010,
-"East",
-81,
-71,
-10,
-"2010-12-31" 
-] 
-];
-data.addColumn('string','Fruit');
-data.addColumn('number','Year');
-data.addColumn('string','Location');
-data.addColumn('number','Sales');
-data.addColumn('number','Expenses');
-data.addColumn('number','Profit');
-data.addColumn('string','Date');
-data.addRows(datajson);
-return(data);
-}
- 
-// jsDrawChart
-function drawChartMotionChartID956e344afff1() {
-var data = gvisDataMotionChartID956e344afff1();
-var options = {};
-options["width"] =    600;
-options["height"] =    500;
-options["state"] = "";
-
-    var chart = new google.visualization.MotionChart(
-    document.getElementById('MotionChartID956e344afff1')
-    );
-    chart.draw(data,options);
-    
-
-}
-  
- 
-// jsDisplayChart
-(function() {
-var pkgs = window.__gvisPackages = window.__gvisPackages || [];
-var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
-var chartid = "motionchart";
-  
-// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
-var i, newPackage = true;
-for (i = 0; newPackage && i < pkgs.length; i++) {
-if (pkgs[i] === chartid)
-newPackage = false;
-}
-if (newPackage)
-  pkgs.push(chartid);
-  
-// Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartMotionChartID956e344afff1);
-})();
-function displayChartMotionChartID956e344afff1() {
-  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
-  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
-  window.clearTimeout(window.__gvisLoad);
-  // The timeout is set to 100 because otherwise the container div we are
-  // targeting might not be part of the document yet
-  window.__gvisLoad = setTimeout(function() {
-  var pkgCount = pkgs.length;
-  google.load("visualization", "1", { packages:pkgs, callback: function() {
-  if (pkgCount != pkgs.length) {
-  // Race condition where another setTimeout call snuck in after us; if
-  // that call added a package, we must not shift its callback
-  return;
-}
-while (callbacks.length > 0)
-callbacks.shift()();
-} });
-}, 100);
-}
- 
-// jsFooter
-</script>
- 
-<!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID956e344afff1"></script>
- 
-<!-- divChart -->
-  
-<div id="MotionChartID956e344afff1" 
-  style="width: 600; height: 500;">
-</div>
+M1 <- gvisMotionChart(Fruits, idvar = 'Fruit', timevar = 'Year')
+print(M1, 'chart')</textarea>
 
 ---
 

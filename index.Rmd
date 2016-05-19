@@ -29,10 +29,6 @@ knit        : slidify::knit2slides
 3. 数据驱动的科研能力
 4. 创造力！
 
-> "Food is an important part of a balanced diet"
-
-> <cite>Fran Lebowitz</cite>
-
 批判性思维（CriticalThinking）就是通过一定的标准评价思维，进而改善思维，是合理的、反思性的思维，既是思维技能，也是思维倾向。最初的起源可以追溯到苏格拉
 
 ---
@@ -40,31 +36,31 @@ knit        : slidify::knit2slides
 ## 放大创造力：发现与重建
 
 1. 任何人都有创造力
-2. 
+2. 不同创造力水平
+3. 创造力模式
+4. 动机
+5. 机遇
 
-- map your circles of creativity, let creative people share ideas with each other. Someday, they will surprise you. 
-- you also need to identify your creativity brokers -- people with good judgement and access to resources. 
-- it’s also important to move toward multi-generational leadership teams.
-- You should also be ready to change your consumer frame. 
-- be a platform for creativity. 
-By Bruce Nussbaum
+- 通过构建创造力发现与激励社区，增强观点的交流，创造力将容易被发现与开拓
+- 通过领导团队来推动创造力的开发
+- 为创造力构建温床
 
 --- &radio
 
-## Question 1
+## 小调查
 
-What is 1 + 1?
+什么样的人创造力更高？
 
-1. 1
-2. _2_
-3. 3
-4. 4
+1. 男人
+2. 女人
+3. 工程师
+4. 艺术家
 
 *** .hint
-This is a hint
+上一页
 
 *** .explanation
-This is an explanation## Question 1
+解释参考来自于上一页
 
 ---
 
@@ -86,9 +82,6 @@ n1$print('chart1')
 ```{r opts.label = 'interactive', results = 'asis'}
 require(googleVis)
 M1 <- gvisMotionChart(Fruits, idvar = 'Fruit', timevar = 'Year')
-```
-
-```{r results='asis'}
 print(M1, 'chart')
 ```
 
@@ -96,7 +89,7 @@ print(M1, 'chart')
 
 ## Interactive Chart with Shiny Controls
 
-```{r echo = F, opts.label = 'shiny'}
+```{r opts.label = 'shiny'}
 slidifyUI(
   sidebarPanel(
     selectInput('sex', 'Choose Sex', c('Male', 'Female')),
