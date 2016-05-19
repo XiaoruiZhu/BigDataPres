@@ -1,8 +1,9 @@
 ---
-title       : 大数据时代，再造创造力
+title       : 大数据时代，放大创造力
 subtitle    : 创造力研究及机器学习展示
 author      : 朱浚铭 Jeremy
-job         : 商业分析在读博士
+job         : 商务分析
+date        : 04/16/2016
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
@@ -13,21 +14,33 @@ knit        : slidify::knit2slides
 
 ---
 
-## 简介
+## 目录
 
-1. Edit YAML front matter
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
-
---- .class #id 
-
-## Slide 2
-
-1. Paste
-2. Copy
+1. 大数据时代所需技能
+2. 创造力的发现与重建
+3. 相关研究结果展示
 
 ---
-## 放大创造力
+
+## 大数据，所需技能
+
+1. 批判性思维
+2. 跨学科合作能力
+3. 数据驱动的科研能力
+4. 创造力！
+
+> "Food is an important part of a balanced diet"
+
+> <cite>Fran Lebowitz</cite>
+
+批判性思维（CriticalThinking）就是通过一定的标准评价思维，进而改善思维，是合理的、反思性的思维，既是思维技能，也是思维倾向。最初的起源可以追溯到苏格拉
+
+---
+
+## 放大创造力：发现与重建
+
+1. 任何人都有创造力
+2. 
 
 - map your circles of creativity, let creative people share ideas with each other. Someday, they will surprise you. 
 - you also need to identify your creativity brokers -- people with good judgement and access to resources. 
@@ -37,6 +50,7 @@ knit        : slidify::knit2slides
 By Bruce Nussbaum
 
 --- &radio
+
 ## Question 1
 
 What is 1 + 1?
