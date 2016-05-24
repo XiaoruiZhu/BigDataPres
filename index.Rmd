@@ -59,7 +59,7 @@ knit        : slidify::knit2slides
 
 创造力多样性：任何人都有创造力
 
-<center>![Creative Diversity](figure/Jab.png)
+<center>![Creative Diversity](figure/Jab.png =250x)
 
 ---
 ## 发现创造力
