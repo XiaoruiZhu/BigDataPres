@@ -2,8 +2,8 @@ name: BigDataBeijing
 account: jeremyzhu
 server: shinyapps.io
 appId: 93969
-bundleId: 417696
+bundleId: 461291
 url: https://jeremyzhu.shinyapps.io/BigDataBeijing/
-when: 1460488607.00256
+when: 1464094086.51933
 asMultiple: FALSE
 asStatic: FALSE
