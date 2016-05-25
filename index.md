@@ -13,6 +13,10 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
+--- 
+<center>![CIC](figure/CIC.png)
+
+---
 ## 目录
 
 1. 大数据时代所需技能
@@ -51,7 +55,7 @@ knit        : slidify::knit2slides
 
 创造力多样性：任何人都有创造力
 
-<center>![Creative Diversity](figure/Jab.png){:width="200px"}
+<center>![Creative Diversity](figure/Jab.png)
 
 ---
 ## 发现创造力

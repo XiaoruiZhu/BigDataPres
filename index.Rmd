@@ -13,10 +13,13 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
+<center>![CIC](figure/CIC.png)
+
+---
 ## 目录
 
 1. 大数据时代所需技能
-2. 创造力的发现与重建
+2. 创造力的发现与放大
 3. 相关研究结果展示
 
 --- .class #id
@@ -30,7 +33,7 @@ knit        : slidify::knit2slides
 
 --- &radio
 
-## 小调查
+## 谁更有创造力？
 
 什么样的人创造力更高？
 
@@ -51,7 +54,7 @@ knit        : slidify::knit2slides
 
 创造力多样性：任何人都有创造力
 
-<center>![Creative Diversity](figure/Jab.png){:width="200px"}
+<center>![Creative Diversity](figure/Jab.png)
 
 ---
 ## 发现创造力
