@@ -73,13 +73,19 @@ knit        : slidify::knit2slides
 3. Intelligent Fast Failure
 
 ---
+## 项目介绍
+
+<center>![shoe towers](figure/shoetowers.png)
+
+---
 ## 统计分析结果展示
 
-- 相关性
+- 相关性 Pearson Correlation:
 
-Pearson Correlation between T-value and Attempts: 0.132 (p=0.001*)
+1. between T-value and Attempt: 0.132 (p=0.001*)
+2. between Number of shoes and Attemtp: -0.097 (p=0.005*)
 
-```{r echo = F, results = 'asis', fig.width=6, fig.height=6, fig.align='center'}
+```{r echo = F, results = 'asis', fig.width=6, fig.height=5, fig.align='center'}
 nomissing <- read.csv("data/NoMissingWithCategory.csv", sep = ",")
 allVars <-  as.data.frame(nomissing)
 # summary(allVars$Attempt)
@@ -97,9 +103,25 @@ ggplot(data = subset(allVars, (Attempt<20 & TVALUE<20)), aes(x=TVALUE, y=Attempt
 ```
 
 ---
+
 ## 统计分析结果展示
 
-- 智能快速失败在男、女间并无统计显著区别
+- **创造力表现**在男、女间并无统计显著区别
+
+```{r echo = F, results = 'asis', fig.width=10,fig.height=7, fig.align="center"}
+nomissing <- read.csv("data/NoMissingWithCategory.csv", sep = ",")
+allVars <-  as.data.frame(nomissing)
+allVars$Gender <- as.factor(allVars$Gender)
+# summary(allVars$Gender)
+ggplot(data = subset(allVars, TVALUE<20), aes(x = Gender, y=TVALUE)) +
+  geom_boxplot(aes(x=Gender, y=TVALUE, fill=Gender))
+```
+
+---
+
+## 统计分析结果展示
+
+- **智能快速失败**在男、女间并无统计显著区别
 
 ```{r echo = F, results = 'asis', fig.width=10,fig.height=7, fig.align="center"}
 nomissing <- read.csv("data/NoMissingWithCategory.csv", sep = ",")
@@ -111,9 +133,25 @@ ggplot(data = subset(allVars, Attempt<30), aes(x = Gender, y=Attempt)) +
 ```
 
 ---
+
 ## 统计分析结果展示
 
-- 智能快速失败在国家间有显著区别
+- **创造力表现**在国家间有显著区别
+
+```{r echo = F, results = 'asis', fig.width=10,fig.height=7, fig.align="center"}
+nomissing <- read.csv("data/NoMissingWithCategory.csv", sep = ",")
+allVars <-  as.data.frame(nomissing)
+allVars$Gender <- as.factor(allVars$Gender)
+# summary(allVars$Gender)
+ggplot(data = subset(allVars, (TVALUE<20 & (Country==" Nigeria" | Country==" Mexico" | Country == " China"))), aes(x = Country, y = TVALUE)) +
+  geom_boxplot(aes(x=Country, y=TVALUE, fill=Country))
+```
+
+---
+
+## 统计分析结果展示
+
+- **智能快速失败**在国家间有显著区别
 
 ```{r echo = F, results = 'asis', fig.width=10,fig.height=7, fig.align="center"}
 nomissing <- read.csv("data/NoMissingWithCategory.csv", sep = ",")
@@ -123,3 +161,16 @@ allVars$Gender <- as.factor(allVars$Gender)
 ggplot(data = subset(allVars, (Attempt<30 & (Country==" Nigeria" | Country==" Mexico" | Country == " China"))), aes(x = Country, y = Attempt)) +
   geom_boxplot(aes(x=Country, y=Attempt, fill=Country))
 ```
+
+---
+
+## 在线应用
+
+1. [创造力风格在线测试应用](http://ameveryone.com/shiny/Creativity/)
+
+---
+
+## 课程推荐
+1. [Creativity, Innovation and Changes -- Penn State University](https://www.coursera.org/learn/creativity-innovation)
+2. [Machine Learning -- Stanford University](https://www.coursera.org/learn/machine-learning/home/info)
+3. [Developing Data Products -- The Johns Hopkins University](https://www.coursera.org/learn/data-products/home/welcome) 

@@ -13,14 +13,13 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
---- 
 <center>![CIC](figure/CIC.png)
 
 ---
 ## 目录
 
 1. 大数据时代所需技能
-2. 创造力的发现与重建
+2. 创造力的发现与放大
 3. 相关研究结果展示
 
 --- .class #id
@@ -34,7 +33,7 @@ knit        : slidify::knit2slides
 
 --- &radio
 
-## 小调查
+## 谁更有创造力？
 
 什么样的人创造力更高？
 
@@ -74,24 +73,61 @@ knit        : slidify::knit2slides
 3. Intelligent Fast Failure
 
 ---
+## 项目介绍
+
+<center>![shoe towers](figure/shoetowers.png)
+
+---
 ## 统计分析结果展示
 
-- 相关性
+- 相关性 Pearson Correlation:
 
-Pearson Correlation between T-value and Attempts: 0.132 (p=0.001*)
+1. between T-value and Attempt: 0.132 (p=0.001*)
+2. between Number of shoes and Attemtp: -0.097 (p=0.005*)
 
 <img src="assets/fig/unnamed-chunk-1-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" style="display: block; margin: auto;" />
 
 ---
+
 ## 统计分析结果展示
 
-- 智能快速失败在男、女间并无统计显著区别
+- **创造力表现**在男、女间并无统计显著区别
 
 <img src="assets/fig/unnamed-chunk-2-1.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" />
 
 ---
+
 ## 统计分析结果展示
 
-- 智能快速失败在国家间有显著区别
+- **智能快速失败**在男、女间并无统计显著区别
 
 <img src="assets/fig/unnamed-chunk-3-1.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" style="display: block; margin: auto;" />
+
+---
+
+## 统计分析结果展示
+
+- **创造力表现**在国家间有显著区别
+
+<img src="assets/fig/unnamed-chunk-4-1.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" style="display: block; margin: auto;" />
+
+---
+
+## 统计分析结果展示
+
+- **智能快速失败**在国家间有显著区别
+
+<img src="assets/fig/unnamed-chunk-5-1.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" style="display: block; margin: auto;" />
+
+---
+
+## 在线应用
+
+1. [创造力风格在线测试应用](http://ameveryone.com/shiny/Creativity/)
+
+---
+
+## 课程推荐
+1. [Creativity, Innovation and Changes -- Penn State University](https://www.coursera.org/learn/creativity-innovation)
+2. [Machine Learning -- Stanford University](https://www.coursera.org/learn/machine-learning/home/info)
+3. [Developing Data Products -- The Johns Hopkins University](https://www.coursera.org/learn/data-products/home/welcome) 
