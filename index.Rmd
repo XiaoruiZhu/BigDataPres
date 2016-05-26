@@ -168,6 +168,8 @@ ggplot(data = subset(allVars, (Attempt<30 & (Country==" Nigeria" | Country==" Me
 
 1. [创造力风格在线测试应用](http://ameveryone.com/shiny/Creativity/)
 
+<center>![AmEveryong](figure/QR.jpeg)
+
 ---
 
 ## 课程推荐

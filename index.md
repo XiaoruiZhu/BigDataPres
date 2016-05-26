@@ -125,6 +125,8 @@ knit        : slidify::knit2slides
 
 1. [创造力风格在线测试应用](http://ameveryone.com/shiny/Creativity/)
 
+<center>![AmEveryong](figure/QR.jpeg)
+
 ---
 
 ## 课程推荐
