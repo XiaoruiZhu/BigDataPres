@@ -6,18 +6,15 @@ According to my understanding of this course, developing creative potential may 
 
 I would like to divide my talk into three parts. 
 
-First is to discover creativity. 
+First is discovering creativity. 
 
-Second is to collect and stimulate creativity through three differnt tools.
+Second is collecting and stimulating creativity through three differnt tools.
 
 Third part includs some very simple statistical results.
 
 1. First, let me ask you a question, who has higher creativity? You may choose man, woman, engineer or artists. 
-Creative Diversity:
 
-This concept is based on the assumption that all human beings are creative, but in different ways. 
-
-This assumption conflicts with the popular view of creativity, which often sets apart certain people, such as artists, as so called “truly” creative, while others are not. Dr. Jablokow defined four key variables to distinguish the creativity of one person from another.
+But Dr. Jalokow worked out a theory named "Creative Diversity". This concept is based on the assumption that all human beings are creative, but in different ways. Dr. Jablokow defined four key variables to distinguish the creativity of one person from another.
 
 - first is creative level. It means your potential and manifest cognitive capacity.
 - second is creative style, which means your cognitive preference for structure. Such as someone prefer situations where few rules exist, whereas others prefer situations where well-established rules exits.
@@ -47,6 +44,7 @@ Next part is differences between gender. The first pair-wised boxplot shows the 
 
 Analysis of Variance shows that the differences in **IFF/Attempt** between male and female are not significantly different. 
 
+Another aspect is differences between countries. We are interested in the differences in failure and creativity between countries. So we use analysis of variance, post-hoc test to figure out which country has highest t-value or attempt time. Based on our results, Chinese students perform better than Mexican and Nigerian. And these differences are significant. 
 
 
 今天我想与大家分享的是在大数据时代，如何提高专业技能，学习更多有用的知识，释放自己的创造力。
