@@ -1,8 +1,8 @@
 ---
-title       : 大数据时代，放大创造力
-subtitle    : 创造力研究展示
-author      : 朱浚铭 Jeremy
-job         : 商务分析
+title       : Amplify Creativity in Big Data Era
+subtitle    : Relationship between creativity and failure
+author      : Jeremy Zhu
+job         : Business Analytics
 date        : 04/16/2016
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
@@ -16,71 +16,61 @@ knit        : slidify::knit2slides
 <center>![CIC](figure/CIC.png)
 
 ---
-## 目录
+## Contents
 
-1. 大数据时代所需技能
-2. 创造力的发现与放大
-3. 相关研究结果展示
-
---- .class #id
-
-## 大数据，所需技能
-
-1. 批判性思维
-2. 跨学科合作能力
-3. 数据驱动的科研能力
-4. 创造力！
+1. Discover creativity
+2. Stimulate creativity and collect ideas
+3. Some interesting resutls
 
 --- &radio
 
-## 谁更有创造力？
+## Who has higher creativity?
 
-什么样的人创造力更高？
+Who has higher creativity?
 
-1. 男人
-2. 女人
-3. 工程师
-4. 艺术家
+1. Man
+2. Woman
+3. Engineer
+4. Artist
 
 *** .hint
-创造力有很多种
+Creativity Diversity
 
 *** .explanation
-解释参考来自于上一页
 
 --- 
 
-## 发现创造力
+## Discover creativity
 
-创造力多样性：任何人都有创造力
+Creativie Diversity：everyone is creative in different ways
 
 <center>![Creative Diversity](figure/Jab.png)
 
 ---
-## 发现创造力
 
-1. 不同创造力水平
-2. 创造力类型
-3. 动机
-4. 机遇
+## Discover creativity
 
+1. Creative level
+2. Creative style
+3. Motive
+4. Opportunity
 
 ---
-## 放大创造力
+## Stimulate creativity and collect ideas
 
 1. Wild Mind
 2. Idea Journal
 3. Intelligent Fast Failure
 
 ---
-## 项目介绍
+## Introduction of data
 
 <center>![shoe towers](figure/shoetowers.png)
 
 ---
-## 统计分析结果展示
+## Statistical results
 
-- 相关性 Pearson Correlation:
+- Pearson Correlation:
 
 1. between T-value and Attempt: 0.132 (p=0.001*)
 2. between Number of shoes and Attemtp: -0.097 (p=0.005*)
@@ -89,47 +79,48 @@ knit        : slidify::knit2slides
 
 ---
 
-## 统计分析结果展示
+## Statistical results
 
-- **创造力表现**在男、女间并无统计显著区别
+- The differences in **Creative outcome/T-value** between gender are not significantly different.
 
 <img src="assets/fig/unnamed-chunk-2-1.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" />
 
 ---
 
-## 统计分析结果展示
+## Statistical results
 
-- **智能快速失败**在男、女间并无统计显著区别
+- The differences in **IFF/Attempt** between gender are not significantly different.
 
 <img src="assets/fig/unnamed-chunk-3-1.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" style="display: block; margin: auto;" />
 
 ---
 
-## 统计分析结果展示
+## Statistical results
 
-- **创造力表现**在国家间有显著区别
+- The differences in **Creative outcome/T-value** between countries are significantly different. 
 
 <img src="assets/fig/unnamed-chunk-4-1.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" style="display: block; margin: auto;" />
 
 ---
 
-## 统计分析结果展示
+## Statistical results
 
-- **智能快速失败**在国家间有显著区别
+- The differences in **Attempt** between countries are significantly different. 
 
 <img src="assets/fig/unnamed-chunk-5-1.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" style="display: block; margin: auto;" />
 
 ---
 
-## 在线应用
+## Online application and products
 
-1. [创造力风格在线测试应用](http://ameveryone.com/shiny/Creativity/)
+1. [Creative style online estimation](http://ameveryone.com/shiny/Creativity/)
+2. [R package: DataClean](https://cran.r-project.org/web/packages/DataClean/)
 
 <center>![AmEveryong](figure/QR.jpeg)
 
 ---
 
-## 课程推荐
+## Recommended courses:
 1. [Creativity, Innovation and Changes -- Penn State University](https://www.coursera.org/learn/creativity-innovation)
 2. [Machine Learning -- Stanford University](https://www.coursera.org/learn/machine-learning/home/info)
 3. [Developing Data Products -- The Johns Hopkins University](https://www.coursera.org/learn/data-products/home/welcome) 
