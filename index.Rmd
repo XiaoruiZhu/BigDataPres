@@ -1,8 +1,9 @@
 ---
-title       : 大数据时代，再造创造力
-subtitle    : 创造力研究及机器学习展示
-author      : 朱浚铭 Jeremy
-job         : 商业分析在读博士
+title       : Amplify Creativity in Big Data Era
+subtitle    : Relationship between creativity and failure
+author      : Jeremy Zhu
+job         : Business Analytics
+date        : 04/16/2016
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
@@ -10,125 +11,159 @@ widgets     : [bootstrap, quiz, shiny, interactive]
 ext_widgets : {rCharts: [libraries/nvd3, libraries/highcharts]}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
-
 ---
 
-## 简介
-
-1. Edit YAML front matter
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
-
---- .class #id 
-
-## Slide 2
-
-1. Paste
-2. Copy
+<center>![CIC](figure/CIC.png)
 
 ---
-## 放大创造力
+## Contents
 
-- map your circles of creativity, let creative people share ideas with each other. Someday, they will surprise you. 
-- you also need to identify your creativity brokers -- people with good judgement and access to resources. 
-- it’s also important to move toward multi-generational leadership teams.
-- You should also be ready to change your consumer frame. 
-- be a platform for creativity. 
-By Bruce Nussbaum
+1. Discover creativity
+2. Stimulate creativity and collect ideas
+3. Some interesting resutls
 
 --- &radio
-## Question 1
 
-What is 1 + 1?
+## Who has higher creativity?
 
-1. 1
-2. _2_
-3. 3
-4. 4
+Who has higher creativity?
+
+1. Man
+2. Woman
+3. Engineer
+4. Artist
 
 *** .hint
-This is a hint
+Creativity Diversity
 
 *** .explanation
-This is an explanation## Question 1
+
+--- 
+
+## Discover creativity
+
+Creativie Diversity：everyone is creative in different ways
+
+<center>![Creative Diversity](figure/Jab.png)
 
 ---
 
-## Interactive Chart
+## Discover creativity
 
-```{r echo = F, results = 'asis'}
-require(rCharts)
-haireye = as.data.frame(HairEyeColor)
-n1 <- nPlot(Freq ~ Hair, group = 'Eye', type = 'multiBarChart',
-  data = subset(haireye, Sex == 'Male')
-)
-n1$print('chart1')
-```
+1. Creative level
+2. Creative style
+3. Motive
+4. Opportunity
 
---- &interactive
+---
+## Stimulate creativity and collect ideas
 
-## Interactive Console
+1. Wild Mind
+2. Idea Journal
+3. Intelligent Fast Failure
 
-```{r opts.label = 'interactive', results = 'asis'}
-require(googleVis)
-M1 <- gvisMotionChart(Fruits, idvar = 'Fruit', timevar = 'Year')
-```
+---
+## Introduction of data
 
-```{r results='asis'}
-print(M1, 'chart')
+<center>![shoe towers](figure/shoetowers.png)
+
+---
+## Statistical results
+
+- Pearson Correlation:
+
+1. between T-value and Attempt: 0.132 (p=0.001*)
+2. between Number of shoes and Attemtp: -0.097 (p=0.005*)
+
+```{r echo = F, results = 'asis', fig.width=6, fig.height=5, fig.align='center'}
+nomissing <- read.csv("data/NoMissingWithCategory.csv", sep = ",")
+allVars <-  as.data.frame(nomissing)
+# summary(allVars$Attempt)
+# plot(x = allVars$Attempt, y = allVars$TVALUE, data= subset(allVars, (Attempt<50 & TVALUE< 30)))
+ggplot(data = subset(allVars, (Attempt<20 & TVALUE<20)), aes(x=TVALUE, y=Attempt)) +
+  geom_point(aes(x=TVALUE, y = Attempt))
+        # geom_vline(data=df2,aes(xintercept=YourScore), show.legend =TRUE) +
+        # geom_histogram(position="identity", alpha=0.4, bins = 20) +
+        # geom_vline(xintercept = df2$YourScore,linetype=c(1)) +
+        # ylim(c(0, 70))
+
+# ggplotly()
+# n1 <- nPlot(Freq ~ Hair, group = 'Eye', type = 'multiBarChart',data = subset(haireye, Sex == 'Male'))
+# n1$print('chart1')
 ```
 
 ---
 
-## Interactive Chart with Shiny Controls
+## Statistical results
 
-```{r echo = F, opts.label = 'shiny'}
-slidifyUI(
-  sidebarPanel(
-    selectInput('sex', 'Choose Sex', c('Male', 'Female')),
-    selectInput('type', 'Choose Type',
-      c('multiBarChart', 'multiBarHorizontalChart')
-    )
-  ),
-  mainPanel(
-    tags$div(id = 'nvd3plot', class='shiny-html-output nvd3 rChart')
-  )
-)
+- The differences in **Creative outcome/T-value** between gender are not significantly different.
+
+```{r echo = F, results = 'asis', fig.width=10,fig.height=7, fig.align="center"}
+nomissing <- read.csv("data/NoMissingWithCategory.csv", sep = ",")
+allVars <-  as.data.frame(nomissing)
+allVars$Gender <- as.factor(allVars$Gender)
+# summary(allVars$Gender)
+ggplot(data = subset(allVars, TVALUE<20), aes(x = Gender, y=TVALUE)) +
+  geom_boxplot(aes(x=Gender, y=TVALUE, fill=Gender))
 ```
 
---- &interactive
+---
 
-## Interactive Console
+## Statistical results
 
-```{r opts.label = 'interactive', results = 'asis'}
-require(rCharts)
-a <- Highcharts$new()
-a$chart(type = "spline")
-a$series(data = c(1, 3, 2, 4, 5, 4, 6, 2, 3, 5, NA), dashStyle = "longdash")
-a$series(data = c(NA, 4, 1, 3, 4, 2, 9, 1, 2, 3, 4), dashStyle = "shortdot")
-a$legend(symbolWidth = 80)
-a$print('chart3')
+- The differences in **IFF/Attempt** between gender are not significantly different.
+
+```{r echo = F, results = 'asis', fig.width=10,fig.height=7, fig.align="center"}
+nomissing <- read.csv("data/NoMissingWithCategory.csv", sep = ",")
+allVars <-  as.data.frame(nomissing)
+allVars$Gender <- as.factor(allVars$Gender)
+# summary(allVars$Gender)
+ggplot(data = subset(allVars, Attempt<30), aes(x = Gender, y=Attempt)) +
+  geom_boxplot(aes(x=Gender, y=Attempt, fill=Gender))
 ```
 
---- &interactive
+---
 
-## Results = Markup
+## Statistical results
 
-```{r opts.label = 'interactive', results = 'markup'}
-require(xtable)
-options(xtable.type = 'html')
-xtable(head(mtcars))
+- The differences in **Creative outcome/T-value** between countries are significantly different. 
+
+```{r echo = F, results = 'asis', fig.width=10,fig.height=7, fig.align="center"}
+nomissing <- read.csv("data/NoMissingWithCategory.csv", sep = ",")
+allVars <-  as.data.frame(nomissing)
+allVars$Gender <- as.factor(allVars$Gender)
+# summary(allVars$Gender)
+ggplot(data = subset(allVars, (TVALUE<20 & (Country==" Nigeria" | Country==" Mexico" | Country == " China"))), aes(x = Country, y = TVALUE)) +
+  geom_boxplot(aes(x=Country, y=TVALUE, fill=Country))
 ```
 
---- &interactive
+---
 
-## Interactive economic 
+## Statistical results
 
-```{r opts.label = 'interactive', results='markup'}
-data(economics, package = "ggplot2")
-econ = transform(economics, date = as.character(date))
-m1 = mPlot(x = "date", y = c("psavert", "uempmed"), type = "Line", data = econ)
-m1$set(pointSize = 0, lineWidth = 1)
-m1
+- The differences in **Attempt** between countries are significantly different. 
+
+```{r echo = F, results = 'asis', fig.width=10,fig.height=7, fig.align="center"}
+nomissing <- read.csv("data/NoMissingWithCategory.csv", sep = ",")
+allVars <-  as.data.frame(nomissing)
+allVars$Gender <- as.factor(allVars$Gender)
+# summary(allVars$Gender)
+ggplot(data = subset(allVars, (Attempt<16 & (Country==" Spain" | Country==" Nigeria" | Country==" Mexico" | Country == " China"))), aes(x = Country, y = Attempt)) +
+  geom_boxplot(aes(x=Country, y=Attempt, fill=Country))
 ```
 
+---
+
+## Online application and products
+
+1. [Creative style online estimation](http://ameveryone.com/shiny/Creativity/)
+2. [R package: DataClean](https://cran.r-project.org/web/packages/DataClean/)
+
+<center>![AmEveryong](figure/QR.jpeg)
+
+---
+
+## Recommended courses:
+1. [Creativity, Innovation and Changes -- Penn State University](https://www.coursera.org/learn/creativity-innovation)
+2. [Machine Learning -- Stanford University](https://www.coursera.org/learn/machine-learning/home/info)
+3. [Developing Data Products -- The Johns Hopkins University](https://www.coursera.org/learn/data-products/home/welcome) 

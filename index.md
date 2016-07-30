@@ -1,8 +1,9 @@
 ---
-title       : 大数据时代，再造创造力
-subtitle    : 创造力研究及机器学习展示
-author      : 朱浚铭 Jeremy
-job         : 商业分析在读博士
+title       : Amplify Creativity in Big Data Era
+subtitle    : Relationship between creativity and failure
+author      : Jeremy Zhu
+job         : Business Analytics
+date        : 04/16/2016
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
@@ -10,289 +11,116 @@ widgets     : [bootstrap, quiz, shiny, interactive]
 ext_widgets : {rCharts: [libraries/nvd3, libraries/highcharts]}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
-
 ---
 
-## 简介
-
-1. Edit YAML front matter
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
-
---- .class #id 
-
-## Slide 2
-
-1. Paste
-2. Copy
+<center>![CIC](figure/CIC.png)
 
 ---
-## 放大创造力
+## Contents
 
-- map your circles of creativity, let creative people share ideas with each other. Someday, they will surprise you. 
-- you also need to identify your creativity brokers -- people with good judgement and access to resources. 
-- it’s also important to move toward multi-generational leadership teams.
-- You should also be ready to change your consumer frame. 
-- be a platform for creativity. 
-By Bruce Nussbaum
+1. Discover creativity
+2. Stimulate creativity and collect ideas
+3. Some interesting resutls
 
 --- &radio
-## Question 1
 
-What is 1 + 1?
+## Who has higher creativity?
 
-1. 1
-2. _2_
-3. 3
-4. 4
+Who has higher creativity?
+
+1. Man
+2. Woman
+3. Engineer
+4. Artist
 
 *** .hint
-This is a hint
+Creativity Diversity
 
 *** .explanation
-This is an explanation## Question 1
+
+--- 
+
+## Discover creativity
+
+Creativie Diversity：everyone is creative in different ways
+
+<center>![Creative Diversity](figure/Jab.png)
 
 ---
 
-## Interactive Chart
+## Discover creativity
 
+1. Creative level
+2. Creative style
+3. Motive
+4. Opportunity
 
-<div id = 'chart1' class = 'rChart nvd3'></div>
-<script type='text/javascript'>
- $(document).ready(function(){
-      drawchart1()
-    });
-    function drawchart1(){  
-      var opts = {
- "dom": "chart1",
-"width":    800,
-"height":    400,
-"x": "Hair",
-"y": "Freq",
-"group": "Eye",
-"type": "multiBarChart",
-"id": "chart1" 
-},
-        data = [
- {
- "Hair": "Black",
-"Eye": "Brown",
-"Sex": "Male",
-"Freq":             32 
-},
-{
- "Hair": "Brown",
-"Eye": "Brown",
-"Sex": "Male",
-"Freq":             53 
-},
-{
- "Hair": "Red",
-"Eye": "Brown",
-"Sex": "Male",
-"Freq":             10 
-},
-{
- "Hair": "Blond",
-"Eye": "Brown",
-"Sex": "Male",
-"Freq":              3 
-},
-{
- "Hair": "Black",
-"Eye": "Blue",
-"Sex": "Male",
-"Freq":             11 
-},
-{
- "Hair": "Brown",
-"Eye": "Blue",
-"Sex": "Male",
-"Freq":             50 
-},
-{
- "Hair": "Red",
-"Eye": "Blue",
-"Sex": "Male",
-"Freq":             10 
-},
-{
- "Hair": "Blond",
-"Eye": "Blue",
-"Sex": "Male",
-"Freq":             30 
-},
-{
- "Hair": "Black",
-"Eye": "Hazel",
-"Sex": "Male",
-"Freq":             10 
-},
-{
- "Hair": "Brown",
-"Eye": "Hazel",
-"Sex": "Male",
-"Freq":             25 
-},
-{
- "Hair": "Red",
-"Eye": "Hazel",
-"Sex": "Male",
-"Freq":              7 
-},
-{
- "Hair": "Blond",
-"Eye": "Hazel",
-"Sex": "Male",
-"Freq":              5 
-},
-{
- "Hair": "Black",
-"Eye": "Green",
-"Sex": "Male",
-"Freq":              3 
-},
-{
- "Hair": "Brown",
-"Eye": "Green",
-"Sex": "Male",
-"Freq":             15 
-},
-{
- "Hair": "Red",
-"Eye": "Green",
-"Sex": "Male",
-"Freq":              7 
-},
-{
- "Hair": "Blond",
-"Eye": "Green",
-"Sex": "Male",
-"Freq":              8 
-} 
-]
-  
-      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
-        var data = d3.nest()
-          .key(function(d){
-            //return opts.group === undefined ? 'main' : d[opts.group]
-            //instead of main would think a better default is opts.x
-            return opts.group === undefined ? opts.y : d[opts.group];
-          })
-          .entries(data);
-      }
-      
-      if (opts.disabled != undefined){
-        data.map(function(d, i){
-          d.disabled = opts.disabled[i]
-        })
-      }
-      
-      nv.addGraph(function() {
-        var chart = nv.models[opts.type]()
-          .width(opts.width)
-          .height(opts.height)
-          
-        if (opts.type != "bulletChart"){
-          chart
-            .x(function(d) { return d[opts.x] })
-            .y(function(d) { return d[opts.y] })
-        }
-          
-         
-        
-          
-        
+---
+## Stimulate creativity and collect ideas
 
-        
-        
-        
-      
-       d3.select("#" + opts.id)
-        .append('svg')
-        .datum(data)
-        .transition().duration(500)
-        .call(chart);
+1. Wild Mind
+2. Idea Journal
+3. Intelligent Fast Failure
 
-       nv.utils.windowResize(chart.update);
-       return chart;
-      });
-    };
-</script>
+---
+## Introduction of data
 
---- &interactive
+<center>![shoe towers](figure/shoetowers.png)
 
-## Interactive Console
+---
+## Statistical results
 
-<textarea class='interactive' id='interactive{{slide.num}}' data-cell='{{slide.num}}' data-results='asis' style='display:none'>require(googleVis)
-M1 <- gvisMotionChart(Fruits, idvar = 'Fruit', timevar = 'Year')</textarea>
+- Pearson Correlation:
 
+1. between T-value and Attempt: 0.132 (p=0.001*)
+2. between Number of shoes and Attemtp: -0.097 (p=0.005*)
 
-```r
-print(M1, 'chart')
-```
-
-```
-## Error in print(M1, "chart"): object 'M1' not found
-```
+<img src="assets/fig/unnamed-chunk-1-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" style="display: block; margin: auto;" />
 
 ---
 
-## Interactive Chart with Shiny Controls
+## Statistical results
 
-<div class="row-fluid">
-  <div class="col-sm-4">
-    <form class="well">
-      <div class="form-group shiny-input-container">
-        <label class="control-label" for="sex">Choose Sex</label>
-        <div>
-          <select id="sex"><option value="Male" selected>Male</option>
-<option value="Female">Female</option></select>
-          <script type="application/json" data-for="sex" data-nonempty="">{}</script>
-        </div>
-      </div>
-      <div class="form-group shiny-input-container">
-        <label class="control-label" for="type">Choose Type</label>
-        <div>
-          <select id="type"><option value="multiBarChart" selected>multiBarChart</option>
-<option value="multiBarHorizontalChart">multiBarHorizontalChart</option></select>
-          <script type="application/json" data-for="type" data-nonempty="">{}</script>
-        </div>
-      </div>
-    </form>
-  </div>
-  <div class="col-sm-8">
-    <div id="nvd3plot" class="shiny-html-output nvd3 rChart"></div>
-  </div>
-</div>
+- The differences in **Creative outcome/T-value** between gender are not significantly different.
 
---- &interactive
+<img src="assets/fig/unnamed-chunk-2-1.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" />
 
-## Interactive Console
+---
 
-<textarea class='interactive' id='interactive{{slide.num}}' data-cell='{{slide.num}}' data-results='asis' style='display:none'>require(rCharts)
-a <- Highcharts$new()
-a$chart(type = "spline")
-a$series(data = c(1, 3, 2, 4, 5, 4, 6, 2, 3, 5, NA), dashStyle = "longdash")
-a$series(data = c(NA, 4, 1, 3, 4, 2, 9, 1, 2, 3, 4), dashStyle = "shortdot")
-a$legend(symbolWidth = 80)
-a$print('chart3')</textarea>
+## Statistical results
 
---- &interactive
+- The differences in **IFF/Attempt** between gender are not significantly different.
 
-## Results = Markup
+<img src="assets/fig/unnamed-chunk-3-1.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" style="display: block; margin: auto;" />
 
-<textarea class='interactive' id='interactive{{slide.num}}' data-cell='{{slide.num}}' data-results='markup' style='display:none'>require(xtable)
-options(xtable.type = 'html')
-xtable(head(mtcars))</textarea>
+---
 
---- &interactive
+## Statistical results
 
-## Interactive economic 
+- The differences in **Creative outcome/T-value** between countries are significantly different. 
 
-<textarea class='interactive' id='interactive{{slide.num}}' data-cell='{{slide.num}}' data-results='markup' style='display:none'>data(economics, package = "ggplot2")
-econ = transform(economics, date = as.character(date))
-m1 = mPlot(x = "date", y = c("psavert", "uempmed"), type = "Line", data = econ)
-m1$set(pointSize = 0, lineWidth = 1)
-m1</textarea>
+<img src="assets/fig/unnamed-chunk-4-1.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" style="display: block; margin: auto;" />
 
+---
+
+## Statistical results
+
+- The differences in **Attempt** between countries are significantly different. 
+
+<img src="assets/fig/unnamed-chunk-5-1.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" style="display: block; margin: auto;" />
+
+---
+
+## Online application and products
+
+1. [Creative style online estimation](http://ameveryone.com/shiny/Creativity/)
+2. [R package: DataClean](https://cran.r-project.org/web/packages/DataClean/)
+
+<center>![AmEveryong](figure/QR.jpeg)
+
+---
+
+## Recommended courses:
+1. [Creativity, Innovation and Changes -- Penn State University](https://www.coursera.org/learn/creativity-innovation)
+2. [Machine Learning -- Stanford University](https://www.coursera.org/learn/machine-learning/home/info)
+3. [Developing Data Products -- The Johns Hopkins University](https://www.coursera.org/learn/data-products/home/welcome) 
