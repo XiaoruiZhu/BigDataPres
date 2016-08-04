@@ -1,3 +1,5 @@
+# English Speech Draft
+
 Thanks for coming today. And the presentation of Fan is really interesting. The topic that I will share with you today is how to amplify or stimulate creativity in the Big data Era. Most materials of this sharing come from a study in which I participated during the last two years. It is a practical application of statistics. In this project, my responsibility is to analyze data that we grthered from online eduction platform, Coursera. Comparing with my other research projects in finance and statistics, the statistical methods that we used in this study are very simple. But some of the results are interesting. Except for statistical results of this study, I would like to share my understanding of how to find and improve your creativity so that you could improve your professional skills and learn more state-of-the-art knowledge. (Because most of my sharing contents are a little bit abstract, I will present following contents in Mandarin. Hope you could understand.)
 
 This study focuses on the relationship between creativity and failure, which is very complex. Scholars are debating the positive and negative effects of failure on the quality and the quantity of creative outcomes. My coauthor, Professor Jablokow and several other professors open an online course named "Creativity, Innovation and Change". This course aims to help students develop creative potential, so students can enhance and transform their business, their community, and their personal life.
@@ -24,7 +26,7 @@ But Dr. Jalokow worked out a theory named "Creative Diversity". This concept is 
 
 So when you want to solve a problem in creative way, thinking these four variables may help you to better understand your creativity.
 
-The next part is stimulating creativity and collect ideas. 
+2. The next part is stimulating creativity and collect ideas. 
 
 In this part, I will introduce three useful tools for stimulating creativity. 
 
