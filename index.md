@@ -75,7 +75,7 @@ Creativie Diversity：everyone is creative in different ways
 1. between T-value and Attempt: 0.132 (p=0.001*)
 2. between Number of shoes and Attemtp: -0.097 (p=0.005*)
 
-<img src="assets/fig/unnamed-chunk-1-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" style="display: block; margin: auto;" />
+<img src="figure/unnamed-chunk-1-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" style="display: block; margin: auto;" />
 
 ---
 
@@ -83,7 +83,7 @@ Creativie Diversity：everyone is creative in different ways
 
 - The differences in **Creative outcome/T-value** between gender are not significantly different.
 
-<img src="assets/fig/unnamed-chunk-2-1.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" />
+<img src="figure/unnamed-chunk-2-1.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" />
 
 ---
 
@@ -91,7 +91,7 @@ Creativie Diversity：everyone is creative in different ways
 
 - The differences in **IFF/Attempt** between gender are not significantly different.
 
-<img src="assets/fig/unnamed-chunk-3-1.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" style="display: block; margin: auto;" />
+<img src="figure/unnamed-chunk-3-1.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" style="display: block; margin: auto;" />
 
 ---
 
@@ -99,7 +99,7 @@ Creativie Diversity：everyone is creative in different ways
 
 - The differences in **Creative outcome/T-value** between countries are significantly different. 
 
-<img src="assets/fig/unnamed-chunk-4-1.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" style="display: block; margin: auto;" />
+<img src="figure/unnamed-chunk-4-1.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" style="display: block; margin: auto;" />
 
 ---
 
@@ -107,7 +107,7 @@ Creativie Diversity：everyone is creative in different ways
 
 - The differences in **Attempt** between countries are significantly different. 
 
-<img src="assets/fig/unnamed-chunk-5-1.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" style="display: block; margin: auto;" />
+<img src="figure/unnamed-chunk-5-1.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" style="display: block; margin: auto;" />
 
 ---
 

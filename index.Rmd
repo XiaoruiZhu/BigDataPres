@@ -76,6 +76,7 @@ Creativie Diversity：everyone is creative in different ways
 2. between Number of shoes and Attemtp: -0.097 (p=0.005*)
 
 ```{r echo = F, results = 'asis', fig.width=6, fig.height=5, fig.align='center'}
+library(ggplot2)
 nomissing <- read.csv("data/NoMissingWithCategory.csv", sep = ",")
 allVars <-  as.data.frame(nomissing)
 # summary(allVars$Attempt)
